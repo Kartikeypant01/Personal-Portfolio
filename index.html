@@ -80,37 +80,37 @@
                 <div>
                     <i class="fa-regular fa-snowflake"></i>
                     <h2>Introduction to Software Engineering</h2>
-                    <a href="https://coursera.org/share/c780efcf20421a326d2fdc2ffeea9cab">Learn more</a>
+                    <a href="https://coursera.org/share/c780efcf20421a326d2fdc2ffeea9cab">LEARN MORE</a>
                 
                 </div>
                 <div>
                     <i class="fa-regular fa-snowflake"></i>
                     <h2>Entrepreneurship Capstone </h2>
-                    <a href="https://coursera.org/share/30f4e3c314233b97504f08d347a86377">Learn more</a>
+                    <a href="https://coursera.org/share/30f4e3c314233b97504f08d347a86377">LEARN MORE</a>
                 
                 </div>
                 <div>
                     <i class="fa-regular fa-snowflake"></i>
                     <h2>Fundamentals of Network Communication</h2>
-                    <a href="https://coursera.org/share/76687ed24f39ad3b5fd3ca68e26bc843">Learn more</a>
+                    <a href="https://coursera.org/share/76687ed24f39ad3b5fd3ca68e26bc843">LEARN MORE</a>
                 
                 </div>
                 <div>
                     <i class="fa-regular fa-snowflake"></i>
                     <h2>Introduction to Artificial Intelligence (AI)</h2>
-                    <a href="https://coursera.org/share/607e4f67915b4f8fe775c06eb1c291d3">Learn more</a>
+                    <a href="https://coursera.org/share/607e4f67915b4f8fe775c06eb1c291d3">LEARN MORE</a>
                 
                 </div>
                 <div>
                     <i class="fa-regular fa-snowflake"></i>
                     <h2>Introduction to Data Science in Python</h2>
-                    <a href="https://coursera.org/share/96244fc8d47e14535c9bddc7e4a41016">Learn more</a>
+                    <a href="https://coursera.org/share/96244fc8d47e14535c9bddc7e4a41016">LEARN MORE</a>
                 
                 </div>
                 <div>
                     <i class="fa-regular fa-snowflake"></i>
                     <h2>Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship</h2>
-                    <a href="https://coursera.org/share/c22b8260da5c7710628c444afb9b8334">Learn more</a>
+                    <a href="https://coursera.org/share/c22b8260da5c7710628c444afb9b8334">LEARN MORE</a>
                 
                 </div>
                 
@@ -130,7 +130,7 @@
                 <img src="images/work-2.png" >
                 <div class="layer">
                     <h3>SMART ATM</h3>
-                    <p>This is a simple chat application in which you can send and receive messages</p>
+                    <p>This is a ATM simulator providing banking functionalities like account creation through sign up,login to existing accounts and other essential transactions features</p>
                     <a href="https://github.com/Kartikeypant01/SMART_ATM"><i class="fa-solid fa-link"></i></a>
                     
                 </div>
@@ -165,7 +165,7 @@
                 <img src="images/work-2.png" >
                 <div class="layer">
                     <h3>Power BI Dashboard</h3>
-                    <p>This is a simple chat application in which you can send and receive messages</p>
+                    <p>This dashobard display the sales and profit reports from different company for different orders</p>
                     <a href=https://github.com/Kartikeypant01/Power-BI-Dashboard"><i class="fa-solid fa-link"></i></a>
                     
                 </div>
@@ -242,6 +242,32 @@
             sidemenu.style.right="-200px";
         }
     </script>
+
+<script>
+    // Check if the screen width is less than or equal to 767px (for mobile)
+    if (window.innerWidth <= 767) {
+        // Create the Intersection Observer
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add the class when the element is in view
+                    entry.target.classList.add('in-view');
+                } else {
+                    // Optionally, remove the class when it's out of view
+                    entry.target.classList.remove('in-view');
+                }
+            });
+        }, { threshold: 0.5 }); // Trigger when 50% of the element is in view
+
+        // Observe each certification item
+        document.querySelectorAll('.certifications-list div').forEach(div => {
+            observer.observe(div);
+        });
+    }
+</script>
+
+
+
     <!-----------google sheet--------------->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyxjW2NyLPazk3eiY1GeebBmMOXVNj7Yija1SPcjOZOSRmlbOdDebXQQ236DoQ79vQB/exec'

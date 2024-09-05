@@ -408,5 +408,18 @@ nav .fa-solid{
     
 
 }
+@media (min-width: 768px) {
+    .certifications-list div:hover {
+        background: #5f22d1;
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 767px) {
+    .certifications-list div.in-view {
+        background: #5f22d1;
+        transform: translateY(-10px);
+    }
+}
 
 
