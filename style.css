@@ -422,4 +422,26 @@ nav .fa-solid{
     }
 }
 
+/* Hover effect for larger screens */
+@media (min-width: 768px) {
+    .work:hover img {
+        transform: scale(1.1);
+    }
+
+    .work:hover .layer {
+        height: 100%;
+    }
+}
+
+/* Scroll-triggered effect for smaller screens */
+@media (max-width: 767px) {
+    .work.in-view img {
+        transform: scale(1.1);
+    }
+
+    .work.in-view .layer {
+        height: 100%;
+    }
+}
+
 
